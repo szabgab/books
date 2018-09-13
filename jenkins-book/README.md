@@ -1,13 +1,19 @@
 # Source of my Jenkins book
 
-Most of the files are generated from the articles on the Code-Maven site.
+Most of the files are generated from the articles on the Code-Maven site and from the Jenkins Manual.
 
 ## Generate:
+
+```
+git clone https://github.com/jenkins-infra/jenkins.io.git
+git clone https://github.com/szabgab/perl-asciidoc.git
+git clone https://github.com/szabgab/books.git
+
+cd books/jenkins-book
+```
 
 Update the `src/changes.md` file.
 
 ```
-perl -I ../perl-asciidoc/lib/ convert_jenkins_io.pl
-perl ../books/convert.pl
-perl convert_jenkins_io.pl
+perl -I ../../perl-asciidoc/lib/ convert_jenkins_io.pl ../../jenkins-book-private/
 ```

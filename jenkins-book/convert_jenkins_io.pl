@@ -4,14 +4,17 @@ use warnings;
 use Asciidoc::Parser;
 use Data::Dumper;
 
-system "$^X ../books/convert.pl . .";
+my $target_dir = shift or die "Usage: $0 TARGET_DIR\n";
+my $jenkins_io = '../../jenkins.io';
+
+system "$^X ../convert.pl . $target_dir";
 convert_all();
 exit;
 
 
 sub convert_all {
-    my $path = '../jenkins.io/content';
-    open my $book, '>>', 'manuscript/Book.txt' or die;  #TODO integrate into the generate script!
+    my $path = "$jenkins_io/content";
+    open my $book, '>>', "$target_dir/manuscript/Book.txt" or die;  #TODO integrate into the generate script!
     
     my @files = (
         'doc/book/getting-started/index.adoc',
@@ -84,7 +87,7 @@ sub convert_all {
         'doc/book/pipeline-as-code.adoc',
     );
     
-    open my $fh, '>', 'manuscript/part2.md' or die;
+    open my $fh, '>', "$target_dir/manuscript/part2.md" or die;
     print $fh "{sample: false, id: user-handbook}\n";
     print $fh "# User Handbook #\n\n";
     close $fh;
@@ -95,13 +98,13 @@ sub convert_all {
         my $filename = $source;
         $filename =~ s{/}{-}g;
         $filename =~ s{adoc$}{md};
-        my $outfile = "manuscript/$filename";
+        my $outfile = "$target_dir/manuscript/$filename";
         convert_asciidoc_to_markua($infile, $outfile);
         print $book "$filename\n";
     }
 
-    my $filename = 'manuscript/license.md';
-    convert_asciidoc_to_markua('../jenkins.io/LICENSE.adoc', $filename);
+    my $filename = "$target_dir/manuscript/license.md";
+    convert_asciidoc_to_markua("$jenkins_io/LICENSE.adoc", $filename);
     print $book "license.md\n";
 
     close $book;
@@ -158,7 +161,7 @@ sub convert_asciidoc_to_markua {
         }
         die "Unhandled tag '$e->{tag}'";
     }
-    open my $fh, '>:encoding(utf8)', $outfile or die;
+    open my $fh, '>:encoding(utf8)', $outfile or die "Could not open '$outfile'";
     print $fh $markua;
     close $fh;
     #print Dumper $data;
