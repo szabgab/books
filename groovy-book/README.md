@@ -3,5 +3,5 @@
 ## Release process
 
 * Update the src/changes.md file
-* perl ../convert.pl
+* perl ../convert.pl . ../../groovy-book-generated
 
