@@ -1,0 +1,18 @@
+[
+   "preface.md",
+   "changes.md",
+   "part1.md",
+   {
+      "pages" : [
+         "https://code-maven.com/jenkins",
+         "https://code-maven.com/install-jenkins-on-ubuntu",
+         "https://code-maven.com/jenkins-pipeline-hello-world",
+         "https://code-maven.com/jenkins-pipeline-running-external-programs",
+         "https://code-maven.com/jenkins-send-email-notifications",
+         "https://code-maven.com/jenkins-pipeline-short-text",
+         "https://code-maven.com/jenkins-cli-create-node"
+      ],
+      "ch" : "jenkins-book",
+      "title" : "Jenkins"
+   }
+]
