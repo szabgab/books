@@ -15,5 +15,5 @@ cd books/jenkins-book
 Update the `src/changes.md` file.
 
 ```
-perl -I ../../perl-asciidoc/lib/ convert_jenkins_io.pl ../../jenkins-book-private/
+perl -I ../../perl-asciidoc/lib/ convert_jenkins_io.pl ../../jenkins-book-generated/
 ```
