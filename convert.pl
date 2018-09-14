@@ -293,6 +293,13 @@ for my $ch (@$chapters) {
             }
        }
 
+       # I think there should be no left over less than or greater than signs in the md files.
+       # Though there still might be some examples embedded, especially in the Perl tutorials
+       # so I might need to relax this check.
+       my @errors = grep { $_ =~ /[<>]/ }  @lines;
+       for my $err (@errors) {
+           die "HTML: $err";
+       }
        path($trg)->spew_utf8(@lines);
     }
 }
