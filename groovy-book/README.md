@@ -2,6 +2,17 @@
 
 ## Release process
 
-* Update the src/changes.md file
-* perl ../convert.pl . ../../groovy-book-generated
+```
+git clone https://github.com/szabgab/books.git
+mkdir groovy-book-generated
+cd books/groovy-book
+```
+
+Update the src/changes.md file
+
+```
+perl ../convert.pl . ../../groovy-book-generated
+```
+
+This will generate the Markua files that are then uploaded to Leanpub that generates the book.
 

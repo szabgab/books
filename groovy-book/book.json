@@ -1,11 +1,28 @@
 [
-   "preface.md",
-   "changes.md",
-   {
-      "pages" : [
-         "https://code-maven.com/groovy-hello-world"
-      ],
-      "ch" : "overview",
-      "title" : "Overview"
-   }
+    "preface.md",
+    "changes.md",
+    {
+        "pages" : [
+            "https://code-maven.com/groovy-hello-world",
+            "https://code-maven.com/groovy-read-from-stdin",
+            "https://code-maven.com/groovy-types",
+            "https://code-maven.com/groovy-undeclared-variable",
+            "https://code-maven.com/groovy-number-guessing-game",
+            "https://code-maven.com/groovy-determine-type-of-object",
+            "https://code-maven.com/groovy-lists",
+            "https://code-maven.com/groovy-sum-of-numbers",
+            "https://code-maven.com/groovy-color-selector",
+            "https://code-maven.com/groovy-read-csv-file",
+            "https://code-maven.com/groovy-count-digits",
+            "https://code-maven.com/groovy-files",
+            "https://code-maven.com/groovy-directory-listing",
+            "https://code-maven.com/groovy-regex",
+            "https://code-maven.com/groovy-map",
+            "https://code-maven.com/groovy-json",
+            "https://code-maven.com/groovy-date-time",
+            "https://code-maven.com/groovy-import-functions-from-another-file"
+        ],
+        "ch" : "overview",
+        "title" : "Overview"
+    }
 ]
