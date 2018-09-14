@@ -20,7 +20,8 @@
             "https://code-maven.com/groovy-map",
             "https://code-maven.com/groovy-json",
             "https://code-maven.com/groovy-date-time",
-            "https://code-maven.com/groovy-import-functions-from-another-file"
+            "https://code-maven.com/groovy-import-functions-from-another-file",
+            "https://code-maven.com/groovy-random-numbers"
         ],
         "ch" : "overview",
         "title" : "Overview"
