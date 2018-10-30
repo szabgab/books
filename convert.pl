@@ -66,12 +66,12 @@ for my $ch (@$chapters) {
         next;
     }
 
-    die "Duplicate id '$ch->{ch}'" if $pages{$ch->{ch}};
+    die "DIE - Duplicate id '$ch->{ch}'" if $pages{$ch->{ch}};
     $pages{$ch->{ch}} = 1;
     push @book, "$ch->{ch}.md\n";
     for my $page (@{ $ch->{pages} }) {
         my ($page_id) = $page =~ m{([^/]+)$};
-        die "Duplicate id '$page_id'" if $pages{$page_id};
+        die "DIE - Duplicate id '$page_id'" if $pages{$page_id};
         $pages{$page_id} = 1;
         push @book, "$page_id.md\n";
     }
@@ -124,12 +124,13 @@ for my $ch (@$chapters) {
     }
 
     my $out = "$dest/manuscript/$ch->{ch}.md";
+    #_log("out: $out");
     path($out)->spew_utf8("{id: $ch->{ch}}\n# $ch->{title}\n\n");
 
     for my $page (@{ $ch->{pages} }) {
         my ($page_id) = $page =~ m{([^/]+)$};
         my $url = substr $page, 0, -length($page_id);
-        die "Could not find local directory for '$url'" if not $dirs{$url};
+        die "DIE - Could not find local directory for '$url'" if not $dirs{$url};
         (my $base_url = $url) =~ s{pro/$}{};
 
         my $path = $dirs{$url};
@@ -182,7 +183,7 @@ for my $ch (@$chapters) {
             # include files: <include file=”examples/prompt.pl”>
             if ($line =~ m{<include file="([^"]+)">}) {
                 my $src = $1;
-                die "Unsupportd include path '$src'" if substr($src, 0, 9) ne 'examples/';
+                die "DIE - Unsupportd include path '$src'" if substr($src, 0, 9) ne 'examples/';
                 my $dir = path($src)->dirname;
                 path("$dest/manuscript/resources/$dir")->mkpath;
                 path("$examples/$src")->copy("$dest/manuscript/resources/$src");
@@ -196,7 +197,7 @@ for my $ch (@$chapters) {
             # handle h2 tags with id: <h2 id="activeperl">ActivePerl</h2>
             if ($line =~ m{^<h2\s+id="([^"]+)">(.*)</h2>}) {
                 my ($id, $text) = ($1, $2);
-                die "Duplicate id '$id'" if $pages{$id};
+                die "DIE - Duplicate id '$id'" if $pages{$id};
                 $pages{$id} = 1;
                 push @lines, "{id: $id}\n", "### $text\n";
                 next;
@@ -212,7 +213,7 @@ for my $ch (@$chapters) {
 
             # What to do with videos?  <iframe width=”640” height=”360” src=”//www.youtube.com/embed/c3qzmJsR2H0” frameborder=”0” allowfullscreen></iframe>
             if ($line =~ m{<iframe [^>]* src="(?:https?:)?//www.youtube.com/embed/([^"]+)"([^>]*)></iframe>}x) {
-                warn "IFRAME: $line";
+                warn "WARN - IFRAME: $line";
                 my $code = $1;
                 $code =~ s/\?.*//;
                 push @lines, "[video](https://www.youtube.com/watch?v=$code)\n";
@@ -221,7 +222,7 @@ for my $ch (@$chapters) {
 
             # <slidecast file="/media/videos/beginner-perl/common-errors" youtube="Sk7QkRNTIak" />
             if ($line =~ m{<slidecast file="[^"]*" youtube="([^"]*)" />}) {
-                warn "SLIDECAST $line";
+                warn "WARN - SLIDECAST $line";
                 push @lines, "[video](https://www.youtube.com/watch?v=$1)\n";
                 next;
             }
@@ -271,7 +272,7 @@ for my $ch (@$chapters) {
                 if ($pages{$id}) {
                     $line =~ s{<a href="$pro/$id">([^<]*)</a>}{[$title](#$id)};
                 } else {
-                    warn "LINK: $line";
+                    warn "WARN - LINK: $line";
                     $line =~ s{<a href="$pro/$id">([^<]*)</a>}{[$title]($base_url$replace_pro$id)};
                 }
             }
@@ -279,7 +280,7 @@ for my $ch (@$chapters) {
             # Handle internal links: <a href="#id">..</a>
             while ($line =~ s{<a href="#([^"]*)">([^<]+)</a>}{[$2](#$1)}) {
                 # cannot verify as that part has not been parsed yet.
-                #die "Missing ID '$1'" if not $pages{$1};
+                #die "DIE - Missing ID '$1'" if not $pages{$1};
             }
 
             if ($line =~ /^\s*$/) {
@@ -298,8 +299,9 @@ for my $ch (@$chapters) {
        # so I might need to relax this check.
        my @errors = grep { $_ =~ /[<>]/ }  @lines;
        for my $err (@errors) {
-           die "HTML: $err";
+           die "DIE - HTML: $err IN page $page";
        }
+       _log("out: $trg");
        path($trg)->spew_utf8(@lines);
     }
 }
