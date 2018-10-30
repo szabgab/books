@@ -7,14 +7,14 @@ Most of the content is generated from pages stored in the https://github.com/sza
 
 ```
 git clone https://github.com/szabgab/books.git
-mkdir perl-maven-book
+mkdir perl-maven-book-generated
 cd books/perl-maven-book
 ```
 
 * Update the src/changes.md file
 
 ```
-perl ../convert.pl . ../../perl-maven-book/
+perl ../convert.pl . ../../perl-maven-book-generated/
 ```
 
 ## TODO
