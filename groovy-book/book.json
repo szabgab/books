@@ -21,7 +21,12 @@
             "https://code-maven.com/groovy-json",
             "https://code-maven.com/groovy-date-time",
             "https://code-maven.com/groovy-import-functions-from-another-file",
-            "https://code-maven.com/groovy-random-numbers"
+            "https://code-maven.com/groovy-random-numbers",
+            "https://code-maven.com/groovy-closures",
+            "https://code-maven.com/groovy-remove-spaces-from-string",
+            "https://code-maven.com/groovy-temporary-file",
+            "https://code-maven.com/groovy-relative-path",
+            "https://code-maven.com/groovy-return-multiple-values-from-function"
         ],
         "ch" : "overview",
         "title" : "Overview"
