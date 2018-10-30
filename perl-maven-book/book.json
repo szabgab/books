@@ -1,0 +1,214 @@
+[
+   "preface.md",
+   "error-reporting.md",
+   "changes.md",
+   {
+      "pages" : [
+         "https://perlmaven.com/perl-tutorial"
+      ],
+      "ch" : "overview",
+      "title" : "Overview"
+   },
+   {
+      "pages" : [
+         "https://perlmaven.com/installing-perl-and-getting-started",
+         "https://perlmaven.com/hashbang",
+         "https://perlmaven.com/perl-editor",
+         "https://perlmaven.com/help",
+         "https://perlmaven.com/perl-on-the-command-line",
+         "https://perlmaven.com/core-perl-documentation-cpan-module-documentation",
+         "https://perlmaven.com/pod-plain-old-documentation-of-perl",
+         "https://perlmaven.com/debugging-perl-scripts"
+      ],
+      "title" : "Introduction",
+      "ch" : "introduction"
+   },
+   {
+      "title" : "Scalars",
+      "ch" : "scalars",
+      "pages" : [
+         "https://perlmaven.com/common-warnings-and-error-messages",
+         "https://perlmaven.com/read-from-stdin",
+         "https://perlmaven.com/automatic-value-conversion-or-casting-in-perl",
+         "https://perlmaven.com/if",
+         "https://perlmaven.com/boolean-values-in-perl",
+         "https://perlmaven.com/numerical-operators",
+         "https://perlmaven.com/string-operators",
+         "https://perlmaven.com/undef-and-defined-in-perl",
+         "https://perlmaven.com/quoted-interpolated-and-escaped-strings-in-perl",
+         "https://perlmaven.com/here-documents",
+         "https://perlmaven.com/scalar-variables",
+         "https://perlmaven.com/comparing-scalars-in-perl",
+         "https://perlmaven.com/string-functions-length-lc-uc-index-substr",
+         "https://perlmaven.com/number-guessing-game",
+         "https://perlmaven.com/while-loop",
+         "https://perlmaven.com/scope-of-variables-in-perl",
+         "https://perlmaven.com/short-circuit"
+      ]
+   },
+   {
+      "ch" : "files",
+      "title" : "Files",
+      "pages" : [
+         "https://perlmaven.com/how-to-exit-from-perl-script",
+         "https://perlmaven.com/stdout-stderr-and-redirection",
+         "https://perlmaven.com/warn",
+         "https://perlmaven.com/die",
+         "https://perlmaven.com/writing-to-files-with-perl",
+         "https://perlmaven.com/appending-to-files",
+         "https://perlmaven.com/open-and-read-from-files",
+         "https://perlmaven.com/open-files-in-the-old-way",
+         "https://perlmaven.com/pro/reading-and-writing-binary-files",
+         "https://perlmaven.com/end-of-file-in-perl",
+         "https://perlmaven.com/pro/tell",
+         "https://perlmaven.com/slurp"
+      ]
+   },
+   {
+      "title" : "Lists and Arrays",
+      "ch" : "lists-and-arrays",
+      "pages" : [
+         "https://perlmaven.com/for-loop-in-perl",
+         "https://perlmaven.com/perl-arrays",
+         "https://perlmaven.com/argv-in-perl",
+         "https://perlmaven.com/how-to-process-command-line-arguments-in-perl",
+         "https://perlmaven.com/advanced-usage-of-getopt-long-accepting-command-line-arguments",
+         "https://perlmaven.com/perl-split",
+         "https://perlmaven.com/how-to-read-a-csv-file-using-perl",
+         "https://perlmaven.com/join",
+         "https://perlmaven.com/the-year-19100",
+         "https://perlmaven.com/scalar-and-list-context-in-perl",
+         "https://perlmaven.com/reading-from-a-file-in-scalar-and-list-context",
+         "https://perlmaven.com/stdin-in-scalar-and-list-context",
+         "https://perlmaven.com/sorting-arrays-in-perl",
+         "https://perlmaven.com/sorting-mixed-strings",
+         "https://perlmaven.com/unique-values-in-an-array-in-perl",
+         "https://perlmaven.com/manipulating-perl-arrays",
+         "https://perlmaven.com/reverse-polish-calculator-in-perl",
+         "https://perlmaven.com/using-a-queue-in-perl",
+         "https://perlmaven.com/reverse",
+         "https://perlmaven.com/the-ternary-operator-in-perl",
+         "https://perlmaven.com/pro/loop-controls-next-last",
+         "https://perlmaven.com/pro/min-max-sum-using-list-util",
+         "https://perlmaven.com/qw-quote-word"
+      ]
+   },
+   {
+      "ch" : "subroutines",
+      "title" : "Subroutines",
+      "pages" : [
+         "https://perlmaven.com/subroutines-and-functions-in-perl",
+         "https://perlmaven.com/pro/passing-multiple-parameters-to-a-function",
+         "https://perlmaven.com/variable-number-of-parameters",
+         "https://perlmaven.com/pro/returning-a-list-from-a-subroutine",
+         "https://perlmaven.com/recursive-subroutines"
+      ]
+   },
+   {
+      "title" : "Hashes",
+      "ch" : "hashes",
+      "pages" : [
+         "https://perlmaven.com/perl-hashes",
+         "https://perlmaven.com/creating-hash-from-an-array",
+         "https://perlmaven.com/perl-hash-in-scalar-and-list-context",
+         "https://perlmaven.com/pro/exists",
+         "https://perlmaven.com/how-to-sort-a-hash-in-perl",
+         "https://perlmaven.com/count-words-in-text-using-perl"
+      ]
+   },
+   {
+      "pages" : [
+         "https://perlmaven.com/introduction-to-regexes-in-perl",
+         "https://perlmaven.com/regex-character-classes",
+         "https://perlmaven.com/regex-special-character-classes",
+         "https://perlmaven.com/regex-quantifiers",
+         "https://perlmaven.com/trim",
+         "https://perlmaven.com/regex-cheat-sheet"
+      ],
+      "title" : "Regular Expressions",
+      "ch" : "regular-expressions"
+   },
+   {
+      "pages" : [
+         "https://perlmaven.com/file-test-operators",
+         "https://perlmaven.com/current-working-directory",
+         "https://perlmaven.com/running-external-programs-from-perl",
+         "https://perlmaven.com/how-to-remove-copy-or-rename-a-file-with-perl",
+         "https://perlmaven.com/reading-the-content-of-a-directory",
+         "https://perlmaven.com/traversing-the-filesystem-using-a-queue"
+      ],
+      "ch" : "shell",
+      "title" : "Shell related functionality"
+   },
+   {
+      "ch" : "cpan",
+      "title" : "CPAN",
+      "pages" : [
+         "https://perlmaven.com/download-and-install-perl",
+         "https://perlmaven.com/how-to-install-a-perl-module-from-cpan",
+         "https://perlmaven.com/how-to-change-inc-to-find-perl-modules-in-non-standard-locations",
+         "https://perlmaven.com/how-to-add-a-relative-directory-to-inc"
+      ]
+   },
+   {
+      "pages" : [
+         "https://perlmaven.com/how-to-replace-a-string-in-a-file-with-perl",
+         "https://perlmaven.com/read-an-excel-file-in-perl",
+         "https://perlmaven.com/create-an-excel-file-with-perl",
+         "https://perlmaven.com/sending-html-email-using-email-stuffer",
+         "https://perlmaven.com/perl-cgi-script-with-apache2",
+         "https://perlmaven.com/json",
+         "https://perlmaven.com/simple-database-access-using-perl-dbi-and-sql",
+         "https://perlmaven.com/reading-from-ldap-in-perl-using-net-ldap"
+      ],
+      "ch" : "examples",
+      "title" : "Examples for using Perl"
+   },
+   {
+      "pages" : [
+         "https://perlmaven.com/global-symbol-requires-explicit-package-name",
+         "https://perlmaven.com/variable-declaration-in-perl",
+         "https://perlmaven.com/use-of-uninitialized-value",
+         "https://perlmaven.com/barewords-in-perl",
+         "https://perlmaven.com/name-used-only-once-possible-typo",
+         "https://perlmaven.com/unknown-warnings-category",
+         "https://perlmaven.com/cant-use-string-as-a-hash-ref-while-strict-refs-in-use",
+         "https://perlmaven.com/symbolic-reference-in-perl",
+         "https://perlmaven.com/cant-locate-in-inc",
+         "https://perlmaven.com/scalar-found-where-operator-expected",
+         "https://perlmaven.com/my-variable-masks-earlier-declaration-in-same-scope",
+         "https://perlmaven.com/cant-call-method-on-unblessed-reference",
+         "https://perlmaven.com/argument-isnt-numeric-in-numeric",
+         "https://perlmaven.com/cant-locate-object-method-via-package-1",
+         "https://perlmaven.com/autoload",
+         "https://perlmaven.com/useless-use-of-hash-element-in-void-context",
+         "https://perlmaven.com/useless-use-of-private-variable-in-void-context",
+         "https://perlmaven.com/readline-on-closed-filehandle",
+         "https://perlmaven.com/possible-precedence-issue-with-control-flow-operator",
+         "https://perlmaven.com/pro/scalar-value-better-written-as",
+         "https://perlmaven.com/pro/substr-outside-of-string",
+         "https://perlmaven.com/have-exceeded-the-maximum-number-of-attempts"
+      ],
+      "ch" : "warnings-and-errors",
+      "title" : "Common warnings and error messages"
+   },
+   {
+      "title" : "Extra articles",
+      "ch" : "extra-article",
+      "pages" : [
+         "https://perlmaven.com/multi-dimensional-arrays-in-perl",
+         "https://perlmaven.com/multi-dimensional-hashes",
+         "https://perlmaven.com/minimal-requirement-to-build-a-sane-cpan-package",
+         "https://perlmaven.com/statement-modifiers",
+         "https://perlmaven.com/autovivification"
+      ]
+   },
+   {
+      "title" : "From other books",
+      "ch" : "from-other-books",
+      "pages" : [
+         "https://perlmaven.com/splice-to-slice-and-dice-arrays-in-perl",
+         "https://perlmaven.com/how-to-improve-my-perl-program"
+      ]
+   }
+]
