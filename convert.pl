@@ -6,15 +6,15 @@ use Path::Tiny qw(path);
 use Data::Dumper qw(Dumper);
 use JSON qw(from_json);
 
-if (@ARGV != 2) {
+if (@ARGV != 2 and @ARGV != 3) {
     die qq{
-Usage: $0 SRC DEST
+Usage: $0 SRC DEST [--relax]
 
 SRC  is the repository where the source are in the src/ subdirectory.
 DEST is the repository of the newly created book with the manuscript/ subdirectory.
 };
 }
-my ($src, $dest) = @ARGV;
+my ($src, $dest, $relax) = @ARGV;
 $src = path($src)->absolute;
 $dest = path($dest)->absolute;
 #_log("Source '$src'");
@@ -298,8 +298,10 @@ for my $ch (@$chapters) {
        # Though there still might be some examples embedded, especially in the Perl tutorials
        # so I might need to relax this check.
        my @errors = grep { $_ =~ /[<>]/ }  @lines;
-       for my $err (@errors) {
-           die "DIE - HTML: $err IN page $page";
+       if (not $relax) {
+           for my $err (@errors) {
+               die "DIE - HTML: $err IN page $page";
+           }
        }
        _log("out: $trg");
        path($trg)->spew_utf8(@lines);
