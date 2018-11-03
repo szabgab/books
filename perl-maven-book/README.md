@@ -14,7 +14,7 @@ cd books/perl-maven-book
 * Update the src/changes.md file
 
 ```
-perl ../convert.pl . ../../perl-maven-book-generated/
+perl ../convert.pl . ../../perl-maven-book-generated/ --relax
 ```
 
 ## TODO
