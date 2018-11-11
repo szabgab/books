@@ -187,7 +187,7 @@
          "https://perlmaven.com/useless-use-of-private-variable-in-void-context",
          "https://perlmaven.com/readline-on-closed-filehandle",
          "https://perlmaven.com/possible-precedence-issue-with-control-flow-operator",
-         "https://perlmaven.com/pro/scalar-value-better-written-as",
+         "https://perlmaven.com/scalar-value-better-written-as",
          "https://perlmaven.com/pro/substr-outside-of-string",
          "https://perlmaven.com/have-exceeded-the-maximum-number-of-attempts"
       ],
