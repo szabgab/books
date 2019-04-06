@@ -1,8 +1,20 @@
 #!/usr/bin/env perl
 use strict;
 use warnings;
-use Asciidoc::Parser;
 use Data::Dumper;
+
+if (not -e '../../perl-asciidoc/lib/') {
+    die "Missing the clone of Asciidoc::Parser\n";
+}
+
+use lib '../../perl-asciidoc/lib/';
+
+eval {
+    require Asciidoc::Parser;
+};
+if ($@) {
+    die "Asciidoc::Parser is missing. Please clone it!\n"
+}
 
 my $target_dir = shift or die "Usage: $0 TARGET_DIR\n";
 my $jenkins_io = '../../jenkins.io';
