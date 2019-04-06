@@ -9,6 +9,12 @@ git clone https://github.com/jenkins-infra/jenkins.io.git
 git clone https://github.com/szabgab/perl-asciidoc.git
 git clone https://github.com/szabgab/books.git
 
+mkdir jenkins-book-generated
+
+# or
+
+git clone git@github.com:szabgab/jenkins-book-generated.git
+
 cd books/jenkins-book
 ```
 

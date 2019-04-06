@@ -27,7 +27,7 @@ exit;
 sub convert_all {
     my $path = "$jenkins_io/content";
     open my $book, '>>', "$target_dir/manuscript/Book.txt" or die;  #TODO integrate into the generate script!
-    
+
     my @files = (
         'doc/book/getting-started/index.adoc',
         'doc/book/getting-started/installing.adoc',

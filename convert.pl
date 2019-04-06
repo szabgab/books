@@ -255,6 +255,8 @@ for my $ch (@$chapters) {
             $line =~ s{<i>(.*?)</i>}{*$1*}g;       # italic (very few)
             $line =~ s{<b>(.*?)</b>}{**$1**}g;     # bold
 
+            $line =~ s{</?strong>}{}g;     # for now let's remove the strong parts
+
             # Handle external links:  <a href="http://search.cpan.org/dist/Path-Tiny/">
             # Handle nofollow links:  <a href="http://search.cpan.org/dist/Path-Tiny/" rel="nofollow">
             $line =~ s{<a\s+href="(https?://[^"]*)"(?: rel="nofollow")?>(.*?)</a>}{[$2]($1)}g;
@@ -294,7 +296,7 @@ for my $ch (@$chapters) {
             }
        }
 
-       # I think there should be no left over less than or greater than signs in the md files.
+       # I think there should be no left over less-than (<) or greater-than (>) signs in the md files.
        # Though there still might be some examples embedded, especially in the Perl tutorials
        # so I might need to relax this check.
        my @errors = grep { $_ =~ /[<>]/ }  @lines;
