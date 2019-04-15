@@ -58,7 +58,7 @@
          "https://perlmaven.com/appending-to-files",
          "https://perlmaven.com/open-and-read-from-files",
          "https://perlmaven.com/open-files-in-the-old-way",
-         "https://perlmaven.com/pro/reading-and-writing-binary-files",
+         "https://perlmaven.com/reading-and-writing-binary-files",
          "https://perlmaven.com/end-of-file-in-perl",
          "https://perlmaven.com/pro/tell",
          "https://perlmaven.com/pro/seek",
@@ -90,7 +90,7 @@
          "https://perlmaven.com/reverse",
          "https://perlmaven.com/the-ternary-operator-in-perl",
          "https://perlmaven.com/pro/loop-controls-next-last",
-         "https://perlmaven.com/pro/min-max-sum-using-list-util",
+         "https://perlmaven.com/min-max-sum-using-list-util",
          "https://perlmaven.com/qw-quote-word"
       ]
    },
@@ -188,7 +188,7 @@
          "https://perlmaven.com/readline-on-closed-filehandle",
          "https://perlmaven.com/possible-precedence-issue-with-control-flow-operator",
          "https://perlmaven.com/scalar-value-better-written-as",
-         "https://perlmaven.com/pro/substr-outside-of-string",
+         "https://perlmaven.com/substr-outside-of-string",
          "https://perlmaven.com/have-exceeded-the-maximum-number-of-attempts"
       ],
       "ch" : "warnings-and-errors",

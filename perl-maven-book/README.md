@@ -8,6 +8,9 @@ Most of the content is generated from pages stored in the https://github.com/sza
 ```
 git clone https://github.com/szabgab/books.git
 mkdir perl-maven-book-generated
+
+git clone git@github.com:szabgab/perl-maven-book-generated.git
+
 cd books/perl-maven-book
 ```
 
@@ -21,7 +24,7 @@ perl ../convert.pl . ../../perl-maven-book-generated/ --relax
 
 * Who links to sites/en/pages/beginner-perl-maven-e-book.txt and what shall we do with that?
 * Include exercises and their solutions from the slides?
-* File::Slurper (see the rejected pr of Ron Savage 
+* File::Slurper (see the rejected pr of Ron Savage)
 
 
 To include later:
