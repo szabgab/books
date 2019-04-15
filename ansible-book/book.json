@@ -1,0 +1,34 @@
+[
+   "preface.md",
+   "changes.md",
+   {
+      "pages" : [
+         "https://code-maven.com/linux",
+         "https://code-maven.com/installing-ubuntu-linux-in-virtualbox",
+         "https://code-maven.com/upgrade-linux-packages-and-install-new-ones",
+         "https://code-maven.com/nano",
+         "https://code-maven.com/virtualbox-host-only-network-ssh-to-remote-machine",
+         "https://code-maven.com/setup-2-ubuntu-boxes-in-virtualbox-to-communicate-with-each-other",
+         "https://code-maven.com/generate-and-deploy-ssh-private-public-keypair",
+         "https://code-maven.com/exercise-linux-as-a-virtual-environment-nginx"
+      ],
+      "ch" : "linux-chapter",
+      "title" : "Linux"
+   },
+   {
+      "pages" : [
+         "https://code-maven.com/setup-for-learning-ansible",
+         "https://code-maven.com/ansible",
+         "https://code-maven.com/installing-ansible",
+         "https://code-maven.com/getting-started-with-ansible-centos",
+         "https://code-maven.com/ansible-on-ubuntu-in-virtual-box-environment",
+         "https://code-maven.com/enable-ansible-passwordless-sudo",
+         "https://code-maven.com/reboot-with-ansible",
+         "https://code-maven.com/waiting-with-ansible-pausing-playbook",
+         "https://code-maven.com/install-and-configure-nginx-using-ansible",
+         "https://code-maven.com/installing-perl-and-cpan-modules-using-ansible"
+      ],
+      "ch" : "ansible-book",
+      "title" : "Ansible"
+   }
+]
