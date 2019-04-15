@@ -1,11 +1,22 @@
 # Source of my Ansible book
 
-Most of the files are generated from the articles on the Code-Maven site.
+## Release process
 
-## Generate:
+```
+git clone https://github.com/szabgab/books.git
+
+mkdir ansible-book-generated
+# or
+git clone git@github.com:szabgab/ansible-book-generated.git
+
+cd books/ansible-book
+```
 
 Update the `src/changes.md` file.
 
 ```
-perl ../books/convert.pl
+perl ../convert.pl . ../../ansible-book-generated --relax
 ```
+
+This will generate the Markua files that are then uploaded to Leanpub that generates the book.
+
