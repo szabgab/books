@@ -1,5 +1,5 @@
 [
-    "about.md",
+    "../shared/about.md",
     "preface.md",
     "changes.md",
     {
