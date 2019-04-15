@@ -29,7 +29,9 @@
             "https://code-maven.com/groovy-return-multiple-values-from-function",
             "https://code-maven.com/groovy-string-length",
             "https://code-maven.com/groovy-substring",
-            "https://code-maven.com/groovy-for-loop-break-continue"
+            "https://code-maven.com/groovy-for-loop-break-continue",
+            "https://code-maven.com/groovy-code-reuse",
+            "https://code-maven.com/groovy-functions"
         ],
         "ch" : "overview",
         "title" : "Overview"
