@@ -6,7 +6,7 @@
 * Update the src/changes.md file
 
 ```
-perl ../convert.pl . ../../collab-dev-git-book --relax
+perl ../convert.pl . ../../collab-dev-git-book-generated --relax
 ```
 
 ## TODO
