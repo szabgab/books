@@ -1,0 +1,54 @@
+[
+  "front-matter.md",
+  "preface.md",
+  "outline.md",
+  "changes.md",
+  "feedback.md",
+  "contributors.md",
+  "introduction.md",
+  "tasks.md",
+  "privacy.md",
+
+  "main-matter.md",
+  "what-is-version-control.md",
+
+  "setup-environment.md",
+  "create-github-account.md",
+  "terminal.md",
+  "install-git.md",
+  "configure-git.md",
+  "install-editor.md",
+   {
+      "pages" : [
+         "https://code-maven.com/git",
+         "https://code-maven.com/git-stash"
+      ],
+      "ch" : "git-locally",
+      "title" : "Git locally"
+   },
+  "first-pull-request.md",
+
+  "second-pull-request.md",
+  "update-project.md",
+  "conflict.md",
+  "pull-request-for-cat.md",
+
+  "continuous-integration.md",
+  "travis-ci.md",
+  "setup-travis-ci.md",
+  "appveyor.md",
+
+
+  "python.md",
+  "python-virtualenv.md",
+  "python-test.md",
+  "python-tasks.md",
+
+  "perl5.md",
+  "perl5-test.md",
+
+  "perl6.md",
+
+  "back-matter.md",
+  "appendix.md"
+]
