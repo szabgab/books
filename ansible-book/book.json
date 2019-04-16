@@ -1,4 +1,5 @@
 [
+   "../shared/about.md",
    "preface.md",
    "changes.md",
    {
@@ -26,7 +27,9 @@
          "https://code-maven.com/reboot-with-ansible",
          "https://code-maven.com/waiting-with-ansible-pausing-playbook",
          "https://code-maven.com/install-and-configure-nginx-using-ansible",
-         "https://code-maven.com/installing-perl-and-cpan-modules-using-ansible"
+         "https://code-maven.com/installing-perl-and-cpan-modules-using-ansible",
+         "https://code-maven.com/ansible-playbook-print-debugging-statement",
+         "https://code-maven.com/ansible-disable-apt-get"
       ],
       "ch" : "ansible-book",
       "title" : "Ansible"

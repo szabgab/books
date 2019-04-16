@@ -3,6 +3,12 @@
 
 Remove the newlines from the paragraph text to fit the expectatoon of Markua.
 
+### v0.04 2019-04-16
+
+* New entries:
+    * [Print debugging statement](#ansible-playbook-print-debugging-statement)
+    * [Stop and disable apt-get using Ansible](#ansible-disable-apt-get)
+
 ### v0.03 2018-03-26
 
 * Updated entries:
