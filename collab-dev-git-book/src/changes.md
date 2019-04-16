@@ -1,6 +1,10 @@
 {sample: true}
 # Changes {#changes}
 
+## v0.32 2019.04.16
+
+* Minor fixes
+
 ## v0.31 2018.08.02
 
 * Errors while pushing a branch (Martha Ryan).

@@ -4,7 +4,10 @@
 ## Release process
 
 * Update the src/changes.md file
-* perl ../books/convert.pl
+
+```
+perl ../convert.pl . ../../collab-dev-git-book --relax
+```
 
 ## TODO
 * Exercise in conflict resolution
