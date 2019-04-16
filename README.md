@@ -3,7 +3,7 @@
 
 * [Ansible](ansible-book/)
 * Bailador
-* Collaborative development with Git and GitHub
+* [Collaborative development with Git and GitHub](collab-dev-git-book/)
 * [Groovy book](groovy-book/)
 * [Jenkins book](jenkins-book/)
 * Markua by Example
