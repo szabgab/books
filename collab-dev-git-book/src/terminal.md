@@ -24,7 +24,7 @@ It will open a black window with a cursor blinking at the top left corner. We wi
 
 First we need to resize the window.
 
-TBD: Screenshot, reize
+TBD: Screenshot, resize
 
 TBD: Use the terminal that comes with the Git installation  (order of Git installation and this?)
 
