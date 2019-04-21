@@ -1,0 +1,29 @@
+[
+   "preface.md",
+   "changes.md",
+   "error-reporting.md",
+   {
+      "pages" : [
+         "https://perlmaven.com/markua",
+         "https://perlmaven.com/start-writing-the-markua-parser",
+         "https://perlmaven.com/creating-makefile-pl-and-a-cpan-distribution-for-the-markua-parser",
+         "https://perlmaven.com/travis-ci-for-markua-parser",
+         "https://perlmaven.com/add-coverage-reporting-with-coveralls-to-markua-parser",
+         "https://perlmaven.com/enable-appveyor-for-the-perl5-markua-parser",
+         "https://perlmaven.com/pro/process-the-six-headers-of-markua",
+         "https://perlmaven.com/pro/refactor-test-cases-of-markua-parser",
+         "https://perlmaven.com/pro/collecting-errors-while-parsing-markua",
+         "https://perlmaven.com/pro/get-coveralls-notify-when-test-coverage-shrinks",
+         "https://perlmaven.com/pro/consider-everything-to-be-a-paragraph-in-markua",
+         "https://perlmaven.com/pro/markua-resources-include-files",
+         "https://perlmaven.com/pro/generate-test-expectations-for-markua-parser",
+         "https://perlmaven.com/pro/parse-bulleted-list-in-markua",
+         "https://perlmaven.com/pro/parse-numbered-list-in-markua",
+         "https://perlmaven.com/pro/release-markua-parser-to-cpan",
+         "https://perlmaven.com/pro/add-attributes-to-markua-round-1",
+         "https://perlmaven.com/pro/devel-cover-for-markua-parser"
+      ],
+      "ch" : "markua-parser",
+      "title" : "Markua Parser"
+   }
+]
