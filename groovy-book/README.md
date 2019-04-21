@@ -15,7 +15,7 @@ cd books/groovy-book
 Update the src/changes.md file
 
 ```
-perl ../convert.pl . ../../groovy-book-generated
+./generate.sh
 ```
 
 This will generate the Markua files that are then uploaded to Leanpub that generates the book.
