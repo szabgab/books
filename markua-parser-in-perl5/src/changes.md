@@ -1,7 +1,7 @@
 {sample: true, id: changes}
 # Changes
 
-## v0.04
+## v0.04 2019-04-21
 
 Remove the newlines from the paragraph text to fit the expectatoon of Markua.
 
