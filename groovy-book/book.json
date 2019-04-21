@@ -32,7 +32,18 @@
             "https://code-maven.com/groovy-substring",
             "https://code-maven.com/groovy-for-loop-break-continue",
             "https://code-maven.com/groovy-code-reuse",
-            "https://code-maven.com/groovy-functions"
+            "https://code-maven.com/groovy-functions",
+            "https://code-maven.com/groovy-evaluate-code-in-other-files",
+            "https://code-maven.com/groovy-classes",
+            "https://code-maven.com/groovy-function-overloading",
+            "https://code-maven.com/groovy-variable-scope",
+            "https://code-maven.com/groovy-recursive-functions",
+            "https://code-maven.com/groovy-command-line-arguments",
+            "https://code-maven.com/groovy-join",
+            "https://code-maven.com/groovy-pop-push",
+            "https://code-maven.com/groovy-printf",
+            "https://code-maven.com/groovy-system-properties",
+            "https://code-maven.com/groovy-path-to-current-script"
         ],
         "ch" : "overview",
         "title" : "Overview"
