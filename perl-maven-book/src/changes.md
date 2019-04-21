@@ -3,6 +3,11 @@
 
 Remove the newlines from the paragraph text to fit the expectatoon of Markua.
 
+## v0.07
+
+* New articles:
+    * [Formatted printing in Perl using printf and sprintf][#printf]
+
 ## v0.06 2018-05-05
 
 * New articles included:
