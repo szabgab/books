@@ -7,7 +7,7 @@
 * [Groovy book](groovy-book/)
 * [Jenkins book](jenkins-book/)
 * Markua by Example
-* Markua Parser
+* [Markua Parser](markua-parser-in-perl5/)
 * [Perl Maven](perl-maven-book/)
 * Single Page Application with Perl Dancer
 
