@@ -43,7 +43,10 @@
             "https://code-maven.com/groovy-pop-push",
             "https://code-maven.com/groovy-printf",
             "https://code-maven.com/groovy-system-properties",
-            "https://code-maven.com/groovy-path-to-current-script"
+            "https://code-maven.com/groovy-path-to-current-script",
+            "https://code-maven.com/groovy-exception-handling",
+            "https://code-maven.com/groovy-throw-exception",
+            "https://code-maven.com/groovy-casting"
         ],
         "ch" : "overview",
         "title" : "Overview"
