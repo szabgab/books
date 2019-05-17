@@ -135,6 +135,7 @@
          "https://perlmaven.com/file-test-operators",
          "https://perlmaven.com/current-working-directory",
          "https://perlmaven.com/running-external-programs-from-perl",
+         "https://perlmaven.com/qx",
          "https://perlmaven.com/how-to-remove-copy-or-rename-a-file-with-perl",
          "https://perlmaven.com/reading-the-content-of-a-directory",
          "https://perlmaven.com/traversing-the-filesystem-using-a-queue"
