@@ -11,7 +11,11 @@
          "https://code-maven.com/jenkins-pipeline-running-external-programs",
          "https://code-maven.com/jenkins-send-email-notifications",
          "https://code-maven.com/jenkins-pipeline-short-text",
-         "https://code-maven.com/jenkins-cli-create-node"
+         "https://code-maven.com/jenkins-cli-create-node",
+         "https://code-maven.com/jenkins-pipeline-builduser",
+         "https://code-maven.com/jenkins-pipeline-environment-variables",
+         "https://code-maven.com/jenkins-git-check-out-using-reference",
+         "https://code-maven.com/jenkins-report-failed-stage-name"
       ],
       "ch" : "jenkins-book",
       "title" : "Jenkins"
