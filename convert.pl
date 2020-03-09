@@ -57,7 +57,7 @@ for my $ch (@$chapters) {
     if (not ref($ch)) {
         if (substr($ch, 0, 2) eq '..') {
             my $name = path("$ch")->basename;
-            path("$ch")->copy("$dest/manuscript/$name");
+            path("$src/$ch")->copy("$dest/manuscript/$name");
             push @book, "$name\n";
         } else {
             path("$src/src/$ch")->copy("$dest/manuscript/$ch");
