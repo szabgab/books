@@ -12,7 +12,7 @@ Ansible is a software product distributed under the GNU GPLv3 open source licens
 
 Ansible is one of the Open Source Configuration Management tools that allow system administrators to manage hundreds or thousands of servers. In this book we'll start by setting up an environment where you can experiment with Ansible.
 
-Ansible itself does not run on MS Windows, we start by setting up Linux boxes in a Virtual environment on your computer. 
+Ansible itself does not run on MS Windows, we start by setting up Linux boxes in a Virtual environment on your computer.
 
 {sample: true, id: error-reporting}
 ## Questions and Error reporting
