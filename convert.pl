@@ -25,7 +25,10 @@ $dest = path($dest)->absolute;
 path("$dest/manuscript/")->remove_tree;
 
 
-my $chapters = from_json path("$src/book.json")->slurp_utf8;
+my $chapters = eval { from_json path("$src/book.json")->slurp_utf8 };
+if ($@) {
+    die "Could not read '$src/book.json':\n$@";
+}
 
 # Each html page url is used as an id to which other parts might link. The %pages hash is used to look up if a link
 # is internal to the book or not.
@@ -83,9 +86,10 @@ path("$dest/manuscript/Book.txt")->spew_utf8(@book);
 my %index;
 
 my %dirs = (
-    'https://perlmaven.com/'     => '/home/gabor/work/perlmaven.com/sites/en/pages',
-    'https://perlmaven.com/pro/' => '/home/gabor/work/perlmaven-pro/articles',
-    'https://code-maven.com/'    => '/home/gabor/work/code-maven.com/sites/en/pages',
+    'https://perlmaven.com/'      => '/home/gabor/work/perlmaven.com/sites/en/pages',
+    'https://perlmaven.com/pro/'  => '/home/gabor/work/perlmaven-pro/pm-en',
+    'https://code-maven.com/'     => '/home/gabor/work/code-maven.com/sites/en/pages',
+    'https://code-maven.com/pro/' => '/home/gabor/work/perlmaven-pro/cm-en',
 );
 
 my %examples = (
@@ -96,7 +100,7 @@ my %examples = (
 
 
 for my $ch (@$chapters) {
-    # For md files, for each {i: text} entry create an index entry pointing to the 
+    # For md files, for each {i: text} entry create an index entry pointing to the
     #     1. top of the page.
     #     2. the most recent linkable place.
     #     3. replace it by a link and link to that.
