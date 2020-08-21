@@ -6,6 +6,7 @@
    {
       "pages" : [
          "https://code-maven.com/jenkins",
+         "https://code-maven.com/vagrant-for-jenkins-on-ubuntu",
          "https://code-maven.com/install-jenkins-on-ubuntu",
          "https://code-maven.com/jenkins-pipeline-hello-world",
          "https://code-maven.com/jenkins-pipeline-running-external-programs",
@@ -15,7 +16,19 @@
          "https://code-maven.com/jenkins-pipeline-builduser",
          "https://code-maven.com/jenkins-pipeline-environment-variables",
          "https://code-maven.com/jenkins-git-check-out-using-reference",
-         "https://code-maven.com/jenkins-report-failed-stage-name"
+         "https://code-maven.com/jenkins-report-failed-stage-name",
+         "https://code-maven.com/jenkins-triggers",
+         "https://code-maven.com/jenkins-pipeline-set-job-name-and-description",
+         "https://code-maven.com/jenkins-readfile-writefile",
+         "https://code-maven.com/jenkins-separate-jobs-for-development-and-production",
+         "https://code-maven.com/jenkins-get-current-user",
+         "https://code-maven.com/jenkins-arbitrary-code-execution",
+         "https://code-maven.com/jenkins-pipeline-parallel-stages",
+         "https://code-maven.com/jenkins-pipeline-collect-exit-code-from-external-commands",
+         "https://code-maven.com/jenkins-pipeline-get-previous-build-status",
+         "https://code-maven.com/jenkins-pipeline-interactive-input-during-process",
+         "https://code-maven.com/jenkins-pipeline-list-agents-by-name-or-by-label",
+         "https://code-maven.com/jenkins-pipeline-add-badges"
       ],
       "ch" : "jenkins-book",
       "title" : "Jenkins"
