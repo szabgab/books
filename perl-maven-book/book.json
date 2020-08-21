@@ -60,8 +60,8 @@
          "https://perlmaven.com/open-files-in-the-old-way",
          "https://perlmaven.com/reading-and-writing-binary-files",
          "https://perlmaven.com/end-of-file-in-perl",
-         "https://perlmaven.com/pro/tell",
-         "https://perlmaven.com/pro/seek",
+         "https://perlmaven.com/tell",
+         "https://perlmaven.com/seek",
          "https://perlmaven.com/slurp"
       ]
    },
@@ -112,7 +112,7 @@
          "https://perlmaven.com/perl-hashes",
          "https://perlmaven.com/creating-hash-from-an-array",
          "https://perlmaven.com/perl-hash-in-scalar-and-list-context",
-         "https://perlmaven.com/pro/exists",
+         "https://perlmaven.com/exists",
          "https://perlmaven.com/pro/delete",
          "https://perlmaven.com/how-to-sort-a-hash-in-perl",
          "https://perlmaven.com/count-words-in-text-using-perl"
@@ -203,7 +203,7 @@
          "https://perlmaven.com/multi-dimensional-hashes",
          "https://perlmaven.com/minimal-requirement-to-build-a-sane-cpan-package",
          "https://perlmaven.com/statement-modifiers",
-         "https://perlmaven.com/autovivification"
+         "https://perlmaven.com/autovivification",
          "https://perlmaven.com/printf"
       ]
    },
