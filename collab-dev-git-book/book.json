@@ -14,7 +14,13 @@
   "what-is-version-control.md",
 
   "setup-environment.md",
-  "create-github-account.md",
+   {
+      "pages" : [
+        "https://code-maven.com/create-github-account"
+      ],
+      "ch" : "github",
+      "title" : "GitHub"
+   },
   "terminal.md",
   "install-git.md",
   "configure-git.md",
