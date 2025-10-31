@@ -12,5 +12,26 @@
 * Single Page Application with Perl Dancer
 * [1000 Python Examples](python-book)
 
+* [JSON in Rust](json-in-rust/)
+
 
 How to generate: see the README file in each one of the subdirectories.
+
+
+```
+mdbook2leanpub ../rust.code-maven.com/books/json/ ../json-in-rust-generated-book/
+```
+
+## Markua for Leanpub
+
+Directory layout
+
+```
+manuscript/
+  resources/
+    title_page.png
+    img/
+    examples/
+  Book.txt
+  *.md
+```
